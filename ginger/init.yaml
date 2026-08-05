@@ -27,7 +27,7 @@ commands:
 - executable: /sbin/measurerd
   command_type: service
   current_dir: /
-  args: []
+  args: [--stdout]
   uid: 2
   gid: 2
 - executable: '/sbin/hello-ginger'
