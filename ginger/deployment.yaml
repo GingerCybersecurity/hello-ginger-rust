@@ -8,12 +8,11 @@ files:
   destination: '/usr/etc/init.yaml'
   uid: 0
   permissions: 0o400
-- source: 'auditd.conf'
-  destination: '/usr/etc/auditd/auditd.conf'
-  uid: 0
-  gid: 1
-  permissions: 0o440
 - source: 'auditd.rules'
   destination: '/usr/etc/auditd/auditd.rules'
+  uid: 1
+  permissions: 0o400
+- source: 'log4rs.json'
+  destination: '/usr/etc/auditd/log4rs.json'
   uid: 1
   permissions: 0o400
